@@ -13,12 +13,6 @@ def len_regular(len):
     return len ** len_regular_coef
 
 
-def reset_pher_matrix():
-    for i in range(quan_vers):
-        for j in range(quan_vers):
-            pher_matrix[i][j] = 1.0 * np.random.randint(1, 4)
-
-
 def get_relevance(ver1, ver2):
     """
     Возвращает (Tij**A)/(Lij**B), где
